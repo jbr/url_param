@@ -61,3 +61,10 @@ module UrlParam
   end
 end
 
+module ActiveRecord
+  class Errors
+    def clear_on(attribute)
+      @errors.delete attribute.to_s
+    end
+  end
+end

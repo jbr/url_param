@@ -19,8 +19,8 @@ module UrlParam
   
   
   def set_url_param
-    if url_param.nil? || send(:"#{self.class.url_param_generation_column}_changed?")
-      self[:url_param] = generate_url_param unless url_param_changed? && self[:url_param]
+    if url_param.blank? || send(:"#{self.class.url_param_generation_column}_changed?")
+      self[:url_param] = generate_url_param unless url_param_changed? && !self[:url_param].blank?
     end
   end
   

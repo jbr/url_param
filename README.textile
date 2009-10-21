@@ -26,6 +26,7 @@ h2. Usage
   e.to_param #=> 'hello-world'
   e.save!
   
+  #---
   e2 = Entry.create(:title => 'hello,     world').url_param #=> 'hello-world-1'
   
   Entry.create(:title => '! hello world').url_param #=> 'hello-world-2'
@@ -40,9 +41,12 @@ The only allowable characters in a url param are lowercase letters, numbers, and
 If you want to make your own url_param, you can use
 
 <pre><code>
+  #entry.rb
   class Entry < ActiveRecord::Base
     self.url_param_column = :some_other_column
   end
+  
+  #---
   
   e = Entry.create :some_other_column => 3
   

@@ -1,0 +1,54 @@
+h1. UrlParam
+
+Yet another rails url parameter column plugin.  It's like all of the others, only it's mine.
+
+h2. Usage
+
+<pre><code>
+  #---
+  #schema.rb
+  create_table "entries", :force => true do |t|
+    t.string   "title"
+    t.string   "url_param"
+    #...
+  end
+  add_index "entries", ["url_param"], :name => "index_entries_on_url_param"
+  
+  
+  #---
+  #entry.rb
+  class Entry < ActiveRecord::Base
+    generate_url_param_from :title
+  end
+  
+  e = Entry.new :title => 'hello, world'
+  e.url_param #=> 'hello-world'
+  e.to_param #=> 'hello-world'
+  e.save!
+  
+  e2 = Entry.create(:title => 'hello,     world').url_param #=> 'hello-world-1'
+  
+  Entry.create(:title => '! hello world').url_param #=> 'hello-world-2'
+  
+  Entry['hello-world-2'].title #=> '! hello world'
+  Entry.find_by_param('hello-world').title #=> 'hello, world'
+  
+</code></pre>
+
+The only allowable characters in a url param are lowercase letters, numbers, and the hyphen.
+
+If you want to make your own url_param, you can use
+
+<pre><code>
+  class Entry < ActiveRecord::Base
+    self.url_param_column = :some_other_column
+  end
+  
+  e = Entry.create :some_other_column => 3
+  
+  e.to_param #=> '3'
+  
+  Entry.find_by_param(3).id #=> e.id
+  Entry[3].id #=> e.id
+</code></pre>
+

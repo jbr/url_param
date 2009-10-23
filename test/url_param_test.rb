@@ -8,7 +8,8 @@ class UrlParamTest < Test::Unit::TestCase
       {
         'hello world' => 'hello-world',
         '  hello 1234 ' => 'hello-1234',
-        '--------hello!@#$%@--world' => 'hello-world'
+        '--------hello!@#$%@--world' => 'hello-world',
+        'HELLO WORLD' => 'hello-world'
       }.each do |title, url_param|
         entry = Entry.new :title => title
         assert_url_param url_param, entry
@@ -29,6 +30,11 @@ class UrlParamTest < Test::Unit::TestCase
 
     should 'generate a unique url param for a new record with an identical title' do
       assert_url_param 'hello-world-1', Entry.new(:title => 'hello world')
+    end
+    
+    should 'progressively generate incremented url params' do
+      Entry.create :title => 'hello world'
+      assert_url_param 'hello-world-2', Entry.new(:title => 'hello world')
     end
 
     should 'find the record by url param' do

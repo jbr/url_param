@@ -1,0 +1,3 @@
+test:
+  adapter: sqlite3
+  database: url_param_plugin.sqlite3

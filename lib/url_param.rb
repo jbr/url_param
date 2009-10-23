@@ -8,7 +8,7 @@ module UrlParam
 
   def generate_url_param
     value = send(self.class.url_param_generation_column).to_s.
-      downcase.gsub(/[^a-z0-9]/, "-").squeeze("-")
+      downcase.gsub(/[^a-z0-9]/, "-").squeeze("-").gsub(/^-|-$/, '')
     scope = new_record? ? self.class : self.class.scoped(:conditions => ['id != ?', self.id])
     while scope.scoped(:conditions => ['url_param = ?', value]).count > 0
       value += '-0' unless value =~ /-[0-9]+$/

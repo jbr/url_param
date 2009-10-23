@@ -1,0 +1,1951 @@
+# Logfile created on Fri Oct 23 14:34:44 -0700 2009 by /
+  [4;36;1mSQL (19.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (72.3ms)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (72.1ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (98.6ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = '-test') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = '-test') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = '-test') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = '-test') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = '-hello-1234-') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'te-st') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (92.4ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.4ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.4ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.4ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.2ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.4ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.3ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.2ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.2ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.4ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.2ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.4ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.2ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.4ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.4ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.3ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.4ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.5ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.3ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.2ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.4ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.3ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.4ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.3ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.4ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.4ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.2ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.2ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "redirect" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "short_url" varchar(255)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mRedirect Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: redirects: SELECT * FROM "redirects" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.4ms)[0m   [0;1mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;35;1mEntry Update (0.2ms)[0m   [0mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.4ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "redirect" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "short_url" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mRedirect Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: redirects: SELECT * FROM "redirects" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.4ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;35;1mEntry Update (0.2ms)[0m   [0mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.4ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE TABLE "redirects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "short_url" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mRedirect Create (0.4ms)[0m   [0;1mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;35;1mRedirect Load (0.3ms)[0m   [0mSELECT * FROM "redirects" WHERE ("redirects"."short_url" = 'abcde') LIMIT 1[0m
+  [4;36;1mRedirect Load (0.1ms)[0m   [0;1mSELECT * FROM "redirects" [0m
+  [4;35;1mRedirect Destroy (0.3ms)[0m   [0mDELETE FROM "redirects" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.4ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.3ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.4ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mDROP TABLE "redirects"[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "redirects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "short_url" varchar(255)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mRedirect Create (0.4ms)[0m   [0mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;36;1mRedirect Load (0.2ms)[0m   [0;1mSELECT * FROM "redirects" WHERE ("redirects"."short_url" = 'abcde') LIMIT 1[0m
+  [4;35;1mRedirect Load (0.1ms)[0m   [0mSELECT * FROM "redirects" [0m
+  [4;36;1mRedirect Destroy (0.3ms)[0m   [0;1mDELETE FROM "redirects" WHERE "id" = 1[0m
+  [4;35;1mRedirect Create (0.3ms)[0m   [0mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;36;1mRedirect Load (0.2ms)[0m   [0;1mSELECT * FROM "redirects" WHERE ("redirects"."short_url" = 'abcde') LIMIT 1[0m
+  [4;35;1mRedirect Load (0.1ms)[0m   [0mSELECT * FROM "redirects" [0m
+  [4;36;1mRedirect Destroy (0.2ms)[0m   [0;1mDELETE FROM "redirects" WHERE "id" = 2[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;35;1mEntry Update (0.4ms)[0m   [0mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.4ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mDROP TABLE "redirects"[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "redirects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "short_url" varchar(255)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mRedirect Create (0.5ms)[0m   [0mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;36;1mRedirect Load (0.2ms)[0m   [0;1mSELECT * FROM "redirects" WHERE ("redirects"."short_url" = 'abcde') LIMIT 1[0m
+  [4;35;1mRedirect Load (0.1ms)[0m   [0mSELECT * FROM "redirects" [0m
+  [4;36;1mRedirect Destroy (0.3ms)[0m   [0;1mDELETE FROM "redirects" WHERE "id" = 1[0m
+  [4;35;1mRedirect Create (0.3ms)[0m   [0mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;36;1mRedirect Load (0.2ms)[0m   [0;1mSELECT * FROM "redirects" WHERE ("redirects"."short_url" = 'abcde') LIMIT 1[0m
+  [4;35;1mRedirect Load (0.1ms)[0m   [0mSELECT * FROM "redirects" [0m
+  [4;36;1mRedirect Destroy (0.2ms)[0m   [0;1mDELETE FROM "redirects" WHERE "id" = 2[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.4ms)[0m   [0;1mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.4ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;35;1mEntry Update (0.2ms)[0m   [0mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.4ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.4ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mDROP TABLE "redirects"[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "redirects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "short_url" varchar(255)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mRedirect Create (0.4ms)[0m   [0mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;36;1mRedirect Load (0.3ms)[0m   [0;1mSELECT * FROM "redirects" WHERE ("redirects"."short_url" = 'abcde') LIMIT 1[0m
+  [4;35;1mRedirect Load (0.1ms)[0m   [0mSELECT * FROM "redirects" [0m
+  [4;36;1mRedirect Destroy (0.3ms)[0m   [0;1mDELETE FROM "redirects" WHERE "id" = 1[0m
+  [4;35;1mRedirect Create (0.4ms)[0m   [0mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;36;1mRedirect Load (0.2ms)[0m   [0;1mSELECT * FROM "redirects" [0m
+  [4;35;1mRedirect Destroy (0.2ms)[0m   [0mDELETE FROM "redirects" WHERE "id" = 2[0m
+  [4;36;1mRedirect Create (0.3ms)[0m   [0;1mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;35;1mRedirect Load (0.2ms)[0m   [0mSELECT * FROM "redirects" WHERE ("redirects"."short_url" = 'abcde') LIMIT 1[0m
+  [4;36;1mRedirect Load (0.1ms)[0m   [0;1mSELECT * FROM "redirects" [0m
+  [4;35;1mRedirect Destroy (0.2ms)[0m   [0mDELETE FROM "redirects" WHERE "id" = 3[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.6ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.2ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (85.6ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mDROP TABLE "redirects"[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "redirects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "short_url" varchar(255)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mRedirect Create (0.4ms)[0m   [0mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;36;1mRedirect Load (0.2ms)[0m   [0;1mSELECT * FROM "redirects" WHERE ("redirects"."short_url" = 'abcde') LIMIT 1[0m
+  [4;35;1mRedirect Load (0.1ms)[0m   [0mSELECT * FROM "redirects" [0m
+  [4;36;1mRedirect Destroy (0.3ms)[0m   [0;1mDELETE FROM "redirects" WHERE "id" = 1[0m
+  [4;35;1mRedirect Create (0.3ms)[0m   [0mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;36;1mRedirect Load (0.3ms)[0m   [0;1mSELECT * FROM "redirects" [0m
+  [4;35;1mRedirect Destroy (0.3ms)[0m   [0mDELETE FROM "redirects" WHERE "id" = 2[0m
+  [4;36;1mRedirect Create (0.3ms)[0m   [0;1mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;35;1mRedirect Load (0.3ms)[0m   [0mSELECT * FROM "redirects" WHERE ("redirects"."short_url" = 'abcde') LIMIT 1[0m
+  [4;36;1mRedirect Load (0.2ms)[0m   [0;1mSELECT * FROM "redirects" [0m
+  [4;35;1mRedirect Destroy (0.3ms)[0m   [0mDELETE FROM "redirects" WHERE "id" = 3[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.4ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.3ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = '') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = '') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = '') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mDROP TABLE "redirects"[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "redirects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "short_url" varchar(255)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name") VALUES('joe')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Destroy (0.3ms)[0m   [0mDELETE FROM "users" WHERE "id" = 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name") VALUES('joe')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mUser Destroy (0.3ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 2[0m
+  [4;35;1mRedirect Create (0.4ms)[0m   [0mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;36;1mRedirect Load (0.3ms)[0m   [0;1mSELECT * FROM "redirects" WHERE ("redirects"."short_url" = 'abcde') LIMIT 1[0m
+  [4;35;1mRedirect Load (0.1ms)[0m   [0mSELECT * FROM "redirects" [0m
+  [4;36;1mRedirect Destroy (0.2ms)[0m   [0;1mDELETE FROM "redirects" WHERE "id" = 1[0m
+  [4;35;1mRedirect Create (0.3ms)[0m   [0mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;36;1mRedirect Load (0.3ms)[0m   [0;1mSELECT * FROM "redirects" [0m
+  [4;35;1mRedirect Destroy (0.3ms)[0m   [0mDELETE FROM "redirects" WHERE "id" = 2[0m
+  [4;36;1mRedirect Create (0.5ms)[0m   [0;1mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;35;1mRedirect Load (0.2ms)[0m   [0mSELECT * FROM "redirects" WHERE ("redirects"."short_url" = 'abcde') LIMIT 1[0m
+  [4;36;1mRedirect Load (0.1ms)[0m   [0;1mSELECT * FROM "redirects" [0m
+  [4;35;1mRedirect Destroy (0.2ms)[0m   [0mDELETE FROM "redirects" WHERE "id" = 3[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.5ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.4ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.6ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.2ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.4ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = '') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = '') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = '') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mDROP TABLE "redirects"[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE TABLE "redirects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "short_url" varchar(255)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name") VALUES('joe')[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Destroy (0.3ms)[0m   [0mDELETE FROM "users" WHERE "id" = 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name") VALUES('joe')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mUser Destroy (0.2ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 2[0m
+  [4;35;1mRedirect Create (0.3ms)[0m   [0mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;36;1mRedirect Load (0.3ms)[0m   [0;1mSELECT * FROM "redirects" WHERE ("redirects"."short_url" = 'abcde') LIMIT 1[0m
+  [4;35;1mRedirect Load (0.2ms)[0m   [0mSELECT * FROM "redirects" [0m
+  [4;36;1mRedirect Destroy (0.3ms)[0m   [0;1mDELETE FROM "redirects" WHERE "id" = 1[0m
+  [4;35;1mRedirect Create (0.3ms)[0m   [0mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;36;1mRedirect Load (0.2ms)[0m   [0;1mSELECT * FROM "redirects" [0m
+  [4;35;1mRedirect Destroy (0.2ms)[0m   [0mDELETE FROM "redirects" WHERE "id" = 2[0m
+  [4;36;1mRedirect Create (0.3ms)[0m   [0;1mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;35;1mRedirect Load (0.2ms)[0m   [0mSELECT * FROM "redirects" WHERE ("redirects"."short_url" = 'abcde') LIMIT 1[0m
+  [4;36;1mRedirect Load (0.1ms)[0m   [0;1mSELECT * FROM "redirects" [0m
+  [4;35;1mRedirect Destroy (0.2ms)[0m   [0mDELETE FROM "redirects" WHERE "id" = 3[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.2ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.2ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.3ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.4ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = '') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = '') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = '') LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mDROP TABLE "entries"[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "url_param" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mDROP TABLE "redirects"[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mCREATE TABLE "redirects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "short_url" varchar(255)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name") VALUES('joe')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Destroy (0.3ms)[0m   [0mDELETE FROM "users" WHERE "id" = 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name") VALUES('joe')[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mUser Destroy (0.4ms)[0m   [0;1mDELETE FROM "users" WHERE "id" = 2[0m
+  [4;35;1mRedirect Create (0.3ms)[0m   [0mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;36;1mRedirect Load (0.3ms)[0m   [0;1mSELECT * FROM "redirects" WHERE ("redirects"."short_url" = 'abcde') LIMIT 1[0m
+  [4;35;1mRedirect Load (0.2ms)[0m   [0mSELECT * FROM "redirects" [0m
+  [4;36;1mRedirect Destroy (0.3ms)[0m   [0;1mDELETE FROM "redirects" WHERE "id" = 1[0m
+  [4;35;1mRedirect Create (0.5ms)[0m   [0mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;36;1mRedirect Load (0.2ms)[0m   [0;1mSELECT * FROM "redirects" [0m
+  [4;35;1mRedirect Destroy (0.2ms)[0m   [0mDELETE FROM "redirects" WHERE "id" = 2[0m
+  [4;36;1mRedirect Create (0.5ms)[0m   [0;1mINSERT INTO "redirects" ("short_url") VALUES('abcde')[0m
+  [4;35;1mRedirect Load (0.3ms)[0m   [0mSELECT * FROM "redirects" WHERE ("redirects"."short_url" = 'abcde') LIMIT 1[0m
+  [4;36;1mRedirect Load (0.2ms)[0m   [0;1mSELECT * FROM "redirects" [0m
+  [4;35;1mRedirect Destroy (0.2ms)[0m   [0mDELETE FROM "redirects" WHERE "id" = 3[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.2ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT * FROM "entries" [0m
+  [4;35;1mEntry Destroy (0.3ms)[0m   [0mDELETE FROM "entries" WHERE "id" = 2[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;36;1mEntry Create (0.3ms)[0m   [0;1mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world-1') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 3[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.3ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE ((url_param = 'howdy-world') AND (id != 4)) [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'howdy-world' AND "entries".id <> 4) LIMIT 1[0m
+  [4;36;1mEntry Update (0.2ms)[0m   [0;1mUPDATE "entries" SET "title" = 'howdy world', "url_param" = 'howdy-world' WHERE "id" = 4[0m
+  [4;35;1mEntry Load (0.4ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.4ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 4[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.3ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'only hyphens, numbers, and lowercase Letters are allowed' AND "entries".id <> 5) LIMIT 1[0m
+  [4;35;1mEntry Load (0.2ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.3ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mEntry Load (0.1ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Create (0.2ms)[0m   [0mINSERT INTO "entries" ("title", "url_param") VALUES('hello world', 'hello-world')[0m
+  [4;36;1mEntry Load (0.2ms)[0m   [0;1mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = 'hello-world') LIMIT 1[0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT * FROM "entries" [0m
+  [4;36;1mEntry Destroy (0.2ms)[0m   [0;1mDELETE FROM "entries" WHERE "id" = 6[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = '') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = '') [0m
+  [4;35;1mEntry Load (0.1ms)[0m   [0mSELECT "entries".id FROM "entries" WHERE ("entries"."url_param" = '') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-world') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "entries" WHERE (url_param = 'hello-1234') [0m

@@ -26,7 +26,7 @@ class UrlParamTest < Test::Unit::TestCase
   end
   
   context 'with a saved entry' do
-    before {@entry = Entry.create :title => 'hello world'}
+    setup {@entry = Entry.create :title => 'hello world'}
 
     should 'generate a unique url param for a new record with an identical title' do
       assert_url_param 'hello-world-1', Entry.new(:title => 'hello world')
@@ -45,7 +45,7 @@ class UrlParamTest < Test::Unit::TestCase
       assert_equal @entry, Entry['hello-world']
     end
     
-    should 'update the url param when the title changes after save' do
+    should 'update the url param when the title changes teardown save' do
       @entry.title = 'howdy world'
       assert_url_param 'hello-world', @entry
       
@@ -65,11 +65,11 @@ class UrlParamTest < Test::Unit::TestCase
       assert_full_messages ['Url param has already been taken'], @new_entry.errors
     end
     
-    after {Entry.destroy_all}
+    teardown {Entry.destroy_all}
   end
   
   context 'using find by param on a model that sets a url param column but does not generate url param' do
-    before {@redirect = Redirect.create :short_url => 'abcde'}
+    setup {@redirect = Redirect.create :short_url => 'abcde'}
     
     should 'find by url param column' do
       assert_equal @redirect, Redirect.find_by_param('abcde')
@@ -83,11 +83,11 @@ class UrlParamTest < Test::Unit::TestCase
       assert_to_param 'abcde', @redirect
     end
     
-    after {Redirect.destroy_all}
+    teardown {Redirect.destroy_all}
   end
   
   context 'using find by param on a model that does nothing related to url param' do
-    before {@user = User.create :name => 'joe'}
+    setup {@user = User.create :name => 'joe'}
 
     should 'find by id' do
       assert_equal @user, User.find_by_param(@user.id)
@@ -97,7 +97,7 @@ class UrlParamTest < Test::Unit::TestCase
       assert_to_param @user.id.to_s, @user
     end
     
-    after {User.destroy_all}
+    teardown {User.destroy_all}
   end
   
 end

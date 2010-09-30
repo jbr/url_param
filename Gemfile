@@ -1,5 +1,9 @@
-only 'test' do
-  gem "test-rig", '0.0.1', :require_as => "test_rig"
+source :gemcutter
+
+group :test do
+  gem 'sqlite3-ruby'
+  gem "test-rig", '0.0.1', :require => "test_rig"
   gem 'shoulda'
-  gem 'activerecord', :require_as => 'active_record'
+  gem 'activerecord', '< 3', :require => 'active_record'
+  gem 'leftright'
 end

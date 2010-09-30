@@ -47,6 +47,10 @@ module UrlParam
       send :"find_by_#{url_param_column}", *args
     end
     alias_method :[], :find_by_param
+
+    def find_by_param!(*args)
+      send :"find_by_#{url_param_column}!", *args
+    end
     
     def generate_url_param_from(column_name)
       self.url_param_generation_column = column_name

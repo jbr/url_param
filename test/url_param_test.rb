@@ -67,7 +67,24 @@ class UrlParamTest < Test::Unit::TestCase
     
     teardown {Entry.destroy_all}
   end
-  
+
+  context 'find by param bang' do
+    setup {@redirect = Redirect.create :short_url => 'whatevers'}
+    context 'when record is found' do
+      should 'return the record' do
+        assert_equal @redirect, Redirect.find_by_param!('whatevers')
+      end
+    end
+    
+    context 'when the record is not found' do
+      should 'raise an ActiveRecord::RecordNotFound' do
+        assert_raises ActiveRecord::RecordNotFound do
+          Redirect.find_by_param! 'nothing'
+        end
+      end
+    end
+  end
+
   context 'using find by param on a model that sets a url param column but does not generate url param' do
     setup {@redirect = Redirect.create :short_url => 'abcde'}
     
